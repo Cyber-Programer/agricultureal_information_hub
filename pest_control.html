@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pest Control</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-green-50 text-gray-800">
+ <!-- nav bar -->
+    <nav class="bg-white shadow-md py-4 px-6 flex items-center justify-between">
+        <!-- Left: Logo + Brand -->
+        <div class="flex items-center space-x-3">
+          <img src="./assets/images/logo.png" alt="logo" class="w-[60px]" />
+          <span class="text-2xl font-extrabold text-green-700">Agricultural Hub</span>
+        </div>
+  
+        <!-- Right: Navigation Links -->
+        <ul class="hidden sm:flex space-x-6 text-sm font-medium text-green-600 capitalize">
+          <li><a href="/home.html" class="hover:text-green-800 transition">home</a></li>
+          <li><a href="/farming_guides.html" class="hover:text-green-800 transition">farming guides</a></li>
+          <li><a href="/crops_details.html" class="hover:text-green-800 transition">crop details</a></li>
+          <li><a href="/pest_control.html" class="hover:text-green-800 transition">pest control</a></li>
+          <li><a href="/contact.html" class="hover:text-green-800 transition">contact</a></li>
+        </ul>
+  
+        <!-- Mobile Menu Button -->
+        <div class="sm:hidden">
+          <button class="text-green-600 hover:text-green-800 focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </nav>
+
+  <!-- Hero Section -->
+  <header class="relative bg-cover bg-center h-72" style="background-image: url('./assets/images/pest.jpg');">
+    <div class="absolute inset-0 bg-black/40 backdrop-blur-sm"></div>
+    <div class="relative z-10 flex items-center justify-center h-full text-white text-center px-6">
+      <div>
+        <h1 class="text-4xl font-bold mb-3">Pest Control</h1>
+        <p class="text-lg">Integrated strategies to keep your crops protected — naturally and effectively.</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- IPM Section -->
+  <section class="max-w-6xl mx-auto px-6 py-12">
+    <h2 class="text-3xl font-bold text-green-700 mb-6">Integrated Pest Management (IPM)</h2>
+    <p class="text-gray-700 text-base mb-6">Integrated Pest Management (IPM) is a holistic approach that combines different strategies to reduce pest damage with minimal environmental impact. It includes physical barriers, biological controls like beneficial insects, and natural/organic remedies instead of relying solely on chemicals.</p>
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- Physical -->
+      <div class="bg-white rounded-lg shadow p-5">
+        <h3 class="text-xl font-semibold text-green-600 mb-2">Physical Controls</h3>
+        <p class="text-sm text-gray-700">Use of barriers, traps, and manual removal of pests to reduce infestations.</p>
+      </div>
+      <!-- Biological -->
+      <div class="bg-white rounded-lg shadow p-5">
+        <h3 class="text-xl font-semibold text-green-600 mb-2">Biological Controls</h3>
+        <p class="text-sm text-gray-700">Introducing beneficial insects such as ladybugs and parasitoids that prey on harmful pests.</p>
+      </div>
+      <!-- Organic -->
+      <div class="bg-white rounded-lg shadow p-5">
+        <h3 class="text-xl font-semibold text-green-600 mb-2">Organic Remedies</h3>
+        <p class="text-sm text-gray-700">Neem oil, garlic sprays, and other plant-based solutions to manage pests naturally.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Monitoring & Detection -->
+  <section class="bg-white py-12 px-6">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-2xl font-bold text-green-700 mb-4">Monitoring & Early Detection Tips</h2>
+      <ul class="list-disc list-inside space-y-2 text-gray-700">
+        <li>Regularly inspect crops for signs of pest damage.</li>
+        <li>Use sticky traps and light traps for early detection.</li>
+        <li>Record pest appearance patterns and seasons.</li>
+        <li>Maintain healthy soil and crop rotation to reduce pest buildup.</li>
+        <li>Encourage natural predators by planting flowering plants.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Effective Treatment Section -->
+  <section class="max-w-6xl mx-auto py-12 px-6">
+    <h2 class="text-2xl font-bold text-green-700 mb-6">Effective Treatment Methods</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="flex flex-col">
+          <img src="./assets/images/spray.jpg" alt="Spraying Natural Remedies" class="rounded-lg shadow-lg mb-4 h-full object-cover">
+          <p class="text-sm text-gray-700">Use low-toxicity sprays like neem oil, chili-garlic extracts, and soaps that are safe for crops and beneficial insects.</p>
+        </div>
+        <div class="flex flex-col">
+          <img src="./assets/images/insect.jpg" alt="Beneficial Insects" class="rounded-lg shadow-lg mb-4 h-full object-cover">
+          <p class="text-sm text-gray-700">Introduce natural predators such as lacewings or praying mantis in affected areas to naturally control pest populations.</p>
+        </div>
+      </div>
+      
+  </section>
+  <footer class="bg-green-700 text-white py-8">
+    <div class="container mx-auto text-center">
+      <h3 class="text-2xl font-bold mb-4">Stay Updated with Agricultural Hub</h3>
+      <p class="text-lg mb-4">Sign up for our newsletter and get the latest tips, guides, and updates delivered to your inbox.</p>
+      <form action="#" method="POST" class="flex justify-center">
+        <input type="email" placeholder="Enter your email" class="p-3 w-1/2 rounded-l-lg text-gray-800" required>
+        <button type="submit" class="bg-green-800 px-6 py-3 rounded-r-lg text-white hover:bg-green-700">Subscribe</button>
+      </form>
+      <div class="mt-8">
+        <p>&copy; 2025 Agricultural Hub. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  
+
+</body>
+</html>

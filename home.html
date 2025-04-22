@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="./assets/css/home.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-green-50">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md py-4 px-6 flex items-center justify-between">
+      <!-- Left: Logo + Brand -->
+      <div class="flex items-center space-x-3">
+        <img src="./assets/images/logo.png" alt="logo" class="w-[60px]" />
+        <span class="text-2xl font-extrabold text-green-700">Agricultural Hub</span>
+      </div>
+
+      <!-- Right: Navigation Links -->
+      <ul class="hidden sm:flex space-x-6 text-sm font-medium text-green-600 capitalize">
+        <li><a href="/home.html" class="hover:text-green-800 transition">home</a></li>
+        <li><a href="/farming_guides.html" class="hover:text-green-800 transition">farming guides</a></li>
+        <li><a href="/crops_details.html" class="hover:text-green-800 transition">crop details</a></li>
+        <li><a href="/pest_control.html" class="hover:text-green-800 transition">pest control</a></li>
+        <li><a href="/contact.html" class="hover:text-green-800 transition">contact</a></li>
+      </ul>
+
+      <!-- Mobile Menu Button -->
+      <div class="sm:hidden">
+        <button class="text-green-600 hover:text-green-800 focus:outline-none">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Hero Section with Background Image -->
+    <header class="relative bg-cover bg-center h-[400px]" style="background-image: url('./assets/images/home.jpg');">
+      <div class="absolute inset-0 bg-black opacity-30"></div>
+      <div class="relative z-10 text-center text-white pt-24">
+        <h1 class="text-4xl font-bold">Welcome to Agricultural Hub</h1>
+        <p class="text-lg mt-4">Explore farming guides, tips, and best practices for successful farming.</p>
+        <button class="capitalize bg-green-800 px-10 py-2 rounded-lg mt-10 cursor-pointer hover:bg-green-700
+        ">get started<button>
+      </div>
+    </header>
+
+    <!-- Flex Section: Image and Text Side by Side -->
+<section class="flex flex-col lg:flex-row items-center gap-10 px-6 py-16 max-w-7xl mx-auto">
+  <!-- Left Image -->
+  <div class="w-full lg:w-1/2 flex justify-center">
+    <img src="./assets/images/flower.jpg" alt="Flower" class="w-[300px] rounded-lg shadow-lg">
+  </div>
+
+  <!-- Right Content -->
+  <div class="w-full lg:w-1/2 flex flex-col justify-center text-gray-800">
+    <h2 class="text-3xl font-bold mb-4">Nature's Beauty & Growth</h2>
+    <p class="text-base">Flowers are a part of agriculture too — promoting pollination and environmental health. Embrace the balance between crop and nature to enhance farm yield and sustainability.</p>
+  </div>
+</section>
+
+<!-- Feature Boxes Section -->
+<section class="bg-white py-16 px-6">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="text-3xl font-bold text-center text-green-700 mb-10">Explore Our Sections</h2>
+    
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <!-- Box 1: Farming Guides -->
+      <div class="bg-green-50 p-5 rounded-lg shadow-md text-center">
+        <img src="./assets/images/farming.jpg" alt="Farming Guides" class="h-40 w-full object-cover rounded mb-4">
+        <h3 class="text-xl font-semibold text-green-700 mb-2">Farming Guides</h3>
+        <p class="text-sm text-gray-700 mb-4">Step-by-step tutorials and methods for efficient and modern farming practices.</p>
+        <a href="/farming_guides.html" class="inline-block bg-green-700 text-white px-4 py-2 rounded hover:bg-green-800 transition">See More</a>
+      </div>
+
+      <!-- Box 2: Crop Details -->
+      <div class="bg-green-50 p-5 rounded-lg shadow-md text-center">
+        <img src="./assets/images/crops.jpg" alt="Crop Details" class="h-40 w-full object-cover rounded mb-4">
+        <h3 class="text-xl font-semibold text-green-700 mb-2">Crop Details</h3>
+        <p class="text-sm text-gray-700 mb-4">Complete information on crop varieties, soil needs, and harvesting techniques.</p>
+        <a href="/crops_details.html" class="inline-block bg-green-700 text-white px-4 py-2 rounded hover:bg-green-800 transition">See More</a>
+      </div>
+
+      <!-- Box 3: Pest Control -->
+      <div class="bg-green-50 p-5 rounded-lg shadow-md text-center">
+        <img src="./assets/images/pest.jpg" alt="Pest Control" class="h-40 w-full object-cover rounded mb-4">
+        <h3 class="text-xl font-semibold text-green-700 mb-2">Pest Control</h3>
+        <p class="text-sm text-gray-700 mb-4">Natural and chemical methods to protect crops from pests and diseases.</p>
+        <a href="/pest_control.html" class="inline-block bg-green-700 text-white px-4 py-2 rounded hover:bg-green-800 transition">See More</a>
+      </div>
+
+      <!-- Box 4: Contact -->
+      <div class="bg-green-50 p-5 rounded-lg shadow-md text-center">
+        <img src="./assets/images/contact.jpg" alt="Contact Us" class="h-40 w-full object-cover rounded mb-4">
+        <h3 class="text-xl font-semibold text-green-700 mb-2">Contact</h3>
+        <p class="text-sm text-gray-700 mb-4">Reach out to us for any queries, support, or agricultural assistance.</p>
+        <a href="/contact.html" class="inline-block bg-green-700 text-white px-4 py-2 rounded hover:bg-green-800 transition">See More</a>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="bg-green-700 text-white py-8">
+  <div class="container mx-auto text-center">
+    <h3 class="text-2xl font-bold mb-4">Stay Updated with Agricultural Hub</h3>
+    <p class="text-lg mb-4">Sign up for our newsletter and get the latest tips, guides, and updates delivered to your inbox.</p>
+    <form action="#" method="POST" class="flex justify-center">
+      <input type="email" placeholder="Enter your email" class="p-3 w-1/2 rounded-l-lg text-gray-800" required>
+      <button type="submit" class="bg-green-800 px-6 py-3 rounded-r-lg text-white hover:bg-green-700">Subscribe</button>
+    </form>
+    <div class="mt-8">
+      <p>&copy; 2025 Agricultural Hub. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+
+
+  </body>
+</html>

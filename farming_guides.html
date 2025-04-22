@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Farming Guides</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-green-50 min-h-screen text-gray-800 font-sans">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md py-4 px-6 flex items-center justify-between">
+        <!-- Left: Logo + Brand -->
+        <div class="flex items-center space-x-3">
+          <img src="./assets/images/logo.png" alt="logo" class="w-[60px]" />
+          <span class="text-2xl font-extrabold text-green-700">Agricultural Hub</span>
+        </div>
+  
+        <!-- Right: Navigation Links -->
+        <ul class="hidden sm:flex space-x-6 text-sm font-medium text-green-600 capitalize">
+          <li><a href="/home.html" class="hover:text-green-800 transition">home</a></li>
+          <li><a href="/farming_guides.html" class="hover:text-green-800 transition">farming guides</a></li>
+          <li><a href="/crops_details.html" class="hover:text-green-800 transition">crop details</a></li>
+          <li><a href="/pest_control.html" class="hover:text-green-800 transition">pest control</a></li>
+          <li><a href="/contact.html" class="hover:text-green-800 transition">contact</a></li>
+        </ul>
+  
+        <!-- Mobile Menu Button -->
+        <div class="sm:hidden">
+          <button class="text-green-600 hover:text-green-800 focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </nav>
+  
+
+    <header class="flex ">
+        <div class="bg-white p-5 mt-5">
+            <img src="./assets/images/farmer.jpg" class="w-80 rounded-lg" alt="farmer">
+        </div>
+        <div class="w-full lg:w-1/2 flex flex-col justify-center p-5">
+            <h1 class="text-xl font-bold capitalize text-left">we provide fresh food's</h1>
+            <p class="pt-5 font-noraml text-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut ratione voluptas laboriosam, repellat impedit in veritatis ipsam rerum, perspiciatis deleniti magnam velit. Quaerat non voluptatem amet ad, nisi blanditiis laborum.</p>
+        </div>
+    </header>
+
+  <div class="container mx-auto px-4 py-8">
+
+    <!-- Header -->
+    <header class="mb-10 text-center">
+      <h1 class="text-4xl font-bold text-green-700">Farming Guides</h1>
+      <p class="text-lg text-gray-600 mt-2">Learn step-by-step techniques, seasonal tips, and best practices for effective farming.</p>
+    </header>
+
+    <!-- Guide Boxes -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+
+      <!-- Box 1: Crop Types -->
+      <div class="bg-white shadow-md rounded-lg p-6 border border-green-100">
+        <h2 class="text-2xl font-semibold text-green-600 mb-3">1. Crop Types</h2>
+        <ul class="list-disc list-inside space-y-1 text-gray-700">
+          <li><strong>Cereal Crops:</strong> Wheat, Rice, Maize, Barley</li>
+          <li><strong>Pulses:</strong> Lentils, Chickpeas, Beans</li>
+          <li><strong>Vegetables:</strong> Tomatoes, Onions, Potatoes</li>
+          <li><strong>Fruits:</strong> Mangoes, Bananas, Citrus</li>
+          <li><strong>Cash Crops:</strong> Cotton, Sugarcane, Coffee</li>
+        </ul>
+      </div>
+
+      <!-- Box 2: Seasons -->
+      <div class="bg-white shadow-md rounded-lg p-6 border border-green-100">
+        <h2 class="text-2xl font-semibold text-green-600 mb-3">2. Seasons & Planting Time</h2>
+        <ul class="list-disc list-inside space-y-1 text-gray-700">
+          <li><strong>Kharif (Monsoon):</strong> June–October – Rice, Maize, Cotton</li>
+          <li><strong>Rabi (Winter):</strong> October–March – Wheat, Mustard, Barley</li>
+          <li><strong>Zaid (Summer):</strong> March–June – Watermelon, Cucumber</li>
+        </ul>
+      </div>
+
+      <!-- Box 3: Farming Methods -->
+      <div class="bg-white shadow-md rounded-lg p-6 border border-green-100">
+        <h2 class="text-2xl font-semibold text-green-600 mb-3">3. Farming Methods</h2>
+        <ul class="list-disc list-inside space-y-1 text-gray-700">
+          <li>Traditional Farming</li>
+          <li>Organic Farming</li>
+          <li>Modern Farming (Tech + Machinery)</li>
+          <li>Mixed Farming (Crops + Livestock)</li>
+          <li>Hydroponics & Vertical Farming</li>
+        </ul>
+      </div>
+
+      <!-- Box 4: Farming Steps -->
+      <div class="bg-white shadow-md rounded-lg p-6 border border-green-100">
+        <h2 class="text-2xl font-semibold text-green-600 mb-3">4. Step-by-Step Instructions</h2>
+        <ul class="list-decimal list-inside space-y-1 text-gray-700">
+          <li>Soil Testing</li>
+          <li>Land Preparation</li>
+          <li>Seed Selection</li>
+          <li>Planting & Spacing</li>
+          <li>Irrigation & Fertilization</li>
+          <li>Pest/Weed Control</li>
+          <li>Harvesting</li>
+          <li>Post-Harvest Storage</li>
+        </ul>
+      </div>
+
+      <!-- Box 5: Tips & Best Practices -->
+      <div class="bg-white shadow-md rounded-lg p-6 border border-green-100">
+        <h2 class="text-2xl font-semibold text-green-600 mb-3">5. Tips & Best Practices</h2>
+        <ul class="list-disc list-inside space-y-1 text-gray-700">
+          <li>Rotate crops to maintain soil fertility</li>
+          <li>Use compost and organic fertilizers</li>
+          <li>Install rainwater harvesting systems</li>
+          <li>Keep detailed records of crops and expenses</li>
+          <li>Stay updated with agri-tech and local resources</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+  <footer class="bg-green-700 text-white py-8">
+    <div class="container mx-auto text-center">
+      <h3 class="text-2xl font-bold mb-4">Stay Updated with Agricultural Hub</h3>
+      <p class="text-lg mb-4">Sign up for our newsletter and get the latest tips, guides, and updates delivered to your inbox.</p>
+      <form action="#" method="POST" class="flex justify-center">
+        <input type="email" placeholder="Enter your email" class="p-3 w-1/2 rounded-l-lg text-gray-800" required>
+        <button type="submit" class="bg-green-800 px-6 py-3 rounded-r-lg text-white hover:bg-green-700">Subscribe</button>
+      </form>
+      <div class="mt-8">
+        <p>&copy; 2025 Agricultural Hub. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  
+
+</body>
+</html>

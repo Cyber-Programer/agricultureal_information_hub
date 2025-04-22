@@ -1,0 +1,15 @@
+
+
+
+ul li a::after{
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color:  var(--color-green-600);
+}
+
+ul li a:hover::after{
+    transition: all 0.3s ;
+    width: 100%;
+}
